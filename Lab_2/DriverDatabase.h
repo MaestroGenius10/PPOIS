@@ -2,7 +2,8 @@
 #include <string>
 #include <vector>
 
-struct DriverData {
+class DriverData{
+public:
     std::string firstName;
     std::string lastName;
     std::string phoneNumber;

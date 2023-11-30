@@ -2,7 +2,8 @@
 #include <string>
 #include <vector>
 
-struct CityData {
+class CityData {
+public:
     std::string cityName;
     std::string departureTime;
     std::string arrivalTime;

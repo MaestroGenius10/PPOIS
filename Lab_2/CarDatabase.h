@@ -2,7 +2,8 @@
 #include <string>
 #include <vector>
 
-struct CarData {
+class CarData {
+    public:
     std::string brand;
     std::string registrationNumber;
     std::string colour;

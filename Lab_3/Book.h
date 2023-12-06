@@ -1,17 +1,18 @@
 #pragma once
 #include <string>
-
+#include"Genre.h"
+#include"Author.h"
 class Book {
 protected:
     std::string title;
-    std::string author;
-    std::string genre;
+    Author author;
+    Genre genre;
     int year;
 
 public:
-    Book(const std::string& title, const std::string& author, const std::string& genre, int year);
+    Book(const std::string& title, const Author& author, const Genre& genre, int year);
     std::string getTitle() const;
-    std::string getAuthor() const;
-    std::string getGenre() const;
+    Author getAuthor() const;
+    Genre getGenre() const;
     virtual void displayInfo() const;
 };
